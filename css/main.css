@@ -329,6 +329,7 @@ Version: 1.0
 
    #home-slider .slide-content {
    	font-size: 60px;
+      font-size: 5vw;
    	color: #FFFFFF;
    	letter-spacing: -3px;
    	text-transform: uppercase;	
