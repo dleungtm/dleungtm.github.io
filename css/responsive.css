@@ -1,8 +1,4 @@
 @media (min-width: 768px) and (max-width: 979px) {
-	nav#brand {
-		float: left;
-		margin-left: 20px;
-	}
 
 	#menu {
 		display: none;	
@@ -53,11 +49,6 @@
 
 @media (min-width: 481px) and (max-width: 767px) {
 
-	nav#brand {
-		float: left;
-		margin-left: 20px;
-	}
-
 	#back-to-top {
 		display: none !important;	
 	}
@@ -89,6 +80,16 @@
 	
 	header .sticky-nav.stuck #logo {
 		margin-left: 20px;	
+	}
+
+	/*replace logo with brand*/
+	
+	header .sticky-nav #brand {
+		margin-left: 0px;
+	}
+
+	header .sticky-nav.stuck #brand {
+		margin-left: 20px;
 	}
 	
 	header .sticky-nav #menu {
@@ -215,11 +216,6 @@
 
 @media (max-width: 480px) {
 
-	nav#brand {
-		float: left;
-		margin-left: 20px;
-	}
-
 	#back-to-top {
 		display: none !important;	
 	}
@@ -255,6 +251,16 @@
 	
 	header .sticky-nav.stuck #logo {
 		margin-left: 20px;	
+	}
+
+	/*replace logo with brand*/
+	
+	header .sticky-nav #brand {
+		margin-left: 0px;
+	}
+
+	header .sticky-nav.stuck #brand {
+		margin-left: 20px;
 	}
 	
 	header .sticky-nav #menu {
