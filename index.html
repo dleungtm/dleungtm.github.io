@@ -1,22 +1,14 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
-<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
-<!--[if (IE 9)]><html class="no-js ie9" lang="en"><![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en-US"> <!--<![endif]-->
+<html>
 <head>
-
 	<!-- Meta Tags -->
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
-	<title>Desmond Leung</title>   
-
-	<meta name="description" content="My Personal Website" /> 
+	<title>Desmond Leung</title>
+	<meta name="description" content="My Personal Website" />
 
 	<!-- Mobile Specifics -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="HandheldFriendly" content="true"/>
-	<meta name="MobileOptimized" content="320"/>   
+	<meta name="MobileOptimized" content="320"/>
 
 	<!-- Mobile Internet Explorer ClearType Technology -->
 	<!--[if IEMobile]>  <meta http-equiv="cleartype" content="on">  <![endif]-->
@@ -44,9 +36,20 @@
 	<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
 	<link href="css/responsive.css" rel="stylesheet">
 
-	<!-- Supersized -->
-	<link href="css/supersized.css" rel="stylesheet">
-	<link href="css/supersized.shutter.css" rel="stylesheet">
+	<!-- Js -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- jQuery Core -->
+	<script src="js/bootstrap.min.js"></script> <!-- Bootstrap -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+	<script src="js/supersized.3.2.7.min.js"></script> <!-- Slider -->
+	<script src="js/waypoints.js"></script> <!-- WayPoints -->
+	<script src="js/waypoints-sticky.js"></script> <!-- Waypoints for Header -->
+	<script src="js/jquery.isotope.js"></script> <!-- Isotope Filter -->
+	<script src="js/jquery.fancybox.pack.js"></script> <!-- Fancybox -->
+	<script src="js/jquery.fancybox-media.js"></script> <!-- Fancybox for Media -->
+	<script src="js/jquery.tweet.js"></script> <!-- Tweet -->
+	<script src="js/plugins.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
+	<script src="js/main.js"></script> <!-- Default JS -->
+	<!-- End Js -->
 
 	<!-- Google Font -->
 	<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css'>
@@ -59,296 +62,275 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="#">
 	<link rel="apple-touch-icon" sizes="144x144" href="#">
 
-	<!-- Modernizr -->
-	<script src="js/modernizr.js"></script>
-
 	<!-- Analytics -->
 	<script type="text/javascript">
 
-		var _gaq = _gaq || [];
-		_gaq.push(['_setAccount', 'Insert Your Code']);
-		_gaq.push(['_trackPageview']);
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'Insert Your Code']);
+	_gaq.push(['_trackPageview']);
 
-		(function() {
-			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		})();
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
 
 	</script>
-	<!-- End Analytics -->
+	<!-- End Analytics --></head>
 
-</head>
+	<body>
 
-
-<body>
-
-	<!-- This section is for Splash Screen -->
-	<div class="ole">
-		<section id="jSplash">
-			<div id="circle"></div>
-		</section>
-	</div>
-	<!-- End of Splash Screen -->
-
-	<!-- Homepage Slider -->
-	<div id="home-slider">  
-		<div class="overlay"></div>
-
-		<div class="slider-text">
-			<div id="slidecaption"></div>
-		</div>   
-
-<!--  <div class="control-nav">
-		<a id="prevslide" class="load-item"><i class="font-icon-arrow-simple-left"></i></a>
-		<a id="nextslide" class="load-item"><i class="font-icon-arrow-simple-right"></i></a>
-		<ul id="slide-list"></ul>
-		
-		<a id="nextsection" href="#about"><i class="font-icon-arrow-simple-down"></i></a>
-	</div> -->
-</div>
-<!-- End Homepage Slider -->
-
-<!-- Header -->
-<header>
-	<div class="sticky-nav">
-		<a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
-
-		<nav id="brand">
-			<a id="goUp" href="#home-slider" title="Desmond Leung">Desmond Leung</a>
-		</nav>
-
-		<nav id="menu">
-			<ul id="menu-nav">
-				<li class="current"><a href="#home-slider">Home</a></li>
-				<li><a href="#about">About Me</a></li>                
-				<li><a href="#work">Projects</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-		</nav>
-
-	</div>
-</header>
-<!-- End Header -->
-
-<!-- About Section -->
-<div id="about" class="page">
-	<div class="container">
-
-		<!-- Title Page -->
-		<div class="row">
-			<div class="span12">
-				<div class="title-page">
-					<h2 class="title">About Me</h2>
-					<h3 class="title-description">Student. Developer. Learner.</h3>
-				</div>
-			</div>
+		<!-- This section is for Splash Screen -->
+		<div class="ole">
+			<section id="jSplash">
+				<div id="circle"></div>
+			</section>
 		</div>
-		<!-- End Title Page -->
+		<!-- End of Splash Screen -->
 
-		<!-- Start Profile -->
-		<div class="profile">
+		<!-- Homepage Slider -->
+		<div id="home-slider">
+			<div class="overlay"></div>
+
+			<div class="slider-text">
+				<div id="slidecaption"></div>
+			</div>
+
+			<!--  <div class="control-nav">
+			<a id="prevslide" class="load-item"><i class="font-icon-arrow-simple-left"></i></a>
+			<a id="nextslide" class="load-item"><i class="font-icon-arrow-simple-right"></i></a>
+			<ul id="slide-list"></ul>
+
+			<a id="nextsection" href="#about"><i class="font-icon-arrow-simple-down"></i></a>
+		</div> -->
+	</div>
+	<!-- End Homepage Slider -->
+
+	<!-- Header -->
+	<header>
+		<div class="sticky-nav">
+			<a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
+
+			<nav id="brand">
+				<a id="goUp" href="#home-slider" title="Desmond Leung">Desmond Leung</a>
+			</nav>
+
+			<nav id="menu">
+				<ul id="menu-nav">
+					<li class="current"><a href="#home-slider">Home</a></li>
+					<li><a href="#about">About Me</a></li>
+					<li><a href="#work">Projects</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+
+		</div>
+	</header>
+	<!-- End Header -->
+
+	<!-- About Section -->
+	<div id="about" class="page">
+		<div class="container">
+
+			<!-- Title Page -->
 			<div class="row">
-				<img class="span3" src="img/profile/profile-01.jpg" alt="Desmond Leung">
-				<h3 class="span9 profile-header">Who am I?</h3>
-				<p class="span9 profile-description">Born and raised in Vancouver, BC with Hong Kong roots. I am a 4th year student studying Computer Science and Biology at the University of British Columbia. I'm passionate about contributing towards improving people's lives, one app at a time. I also enjoy eating all the good food. All of it.</p>
-
-				<div class="span9 social">
-					<ul class="social-icons">
-						<li><a href="https://www.twitter.com/dleungtm"><i class="font-icon-social-twitter"></i></a></li>
-						<li><a href="https://www.facebook.com/dleungtm"><i class="font-icon-social-facebook"></i></a></li>
-						<li><a href="https://www.linkedin.com/in/desmond-leung-276032125"><i class="font-icon-social-linkedin"></i></a></li>
-						<li><a href="mailto:dleungtm@gmail.com"><i class="font-icon-social-email"></i></a></li>
-					</ul>
+				<div class="span12">
+					<div class="title-page">
+						<h2 class="title">About Me</h2>
+						<h3 class="title-description">Student. Developer. Learner.</h3>
+					</div>
 				</div>
 			</div>
-		</div>
-	</div>
-	<!-- End Profile -->
+			<!-- End Title Page -->
 
-</div>
-<!-- End About Section -->
-
-<!-- My Projects Section -->
-<div id="work" class="page-alternate">
-	<div class="container">
-		<!-- Title Page -->
-		<div class="row">
-			<div class="span12">
-				<div class="title-page">
-					<h2 class="title">My Projects</h2>
-					<h3 class="title-description">Check out my projects on <a href="https://github.com/dleungtm">GitHub</a></h3>
-					<h3 class="title-description">or download my <a href="assets/resume.pdf">resume</a>.</h3>
-
-				</div>
-			</div>
-		</div>
-		<!-- End Title Page -->
-
-		<!-- Portfolio Projects -->
-		<div class="row">
-			<div class="span3">
-				<!-- Filter -->
-				<nav id="options" class="work-nav">
-					<ul id="filters" class="option-set" data-option-key="filter">
-						<li class="type-work">Type of Project</li>
-						<li><a href="#filter" data-option-value="*" class="selected">All Projects</a></li>
-						<li><a href="#filter" data-option-value=".cpp">C++</a></li>
-						<li><a href="#filter" data-option-value=".java">Java</a></li>
-						<li><a href="#filter" data-option-value=".swift">Swift</a></li>
-						<li><a href="#filter" data-option-value=".web">Web</a></li>
-					</ul>
-				</nav>
-				<!-- End Filter -->
-			</div>
-
-			<div class="span9">
+			<!-- Start Profile -->
+			<div class="profile">
 				<div class="row">
-					<section id="projects">
-						<ul id="thumbs">
+					<img class="span3" src="img/profile/profile-01.jpg" alt="Desmond Leung">
+					<h3 class="span9 profile-header">Who am I?</h3>
+					<p class="span9 profile-description">Born and raised in Vancouver, BC with Hong Kong roots. I am a 4th year student studying Computer Science and Biology at the University of British Columbia. I'm passionate about contributing towards improving people's lives, one app at a time. I also enjoy eating all the good food. All of it.</p>
 
-							<!-- Item Project and Filter Name -->
-							<li class="item-thumbs span3 web">
-								<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-								<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Personal Website" href="img/work/full/personalwebsite-full.jpg">
-									<span class="overlay-img"></span>
-									<span class="overlay-img-thumb font-icon-plus"></span>
-								</a>
-								<!-- Thumb Image and Description -->
-								<img src="img/work/thumbs/personalwebsite.jpg" alt="Well, you're looking at it. :) Quick and simple!">
-							</li>
-							<!-- End Item Project -->
-
-							<!-- Item Project and Filter Name -->
-							<li class="item-thumbs span3 swift">
-								<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-								<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Calculator for iOS" href="img/work/full/calculator-full.jpg">
-									<span class="overlay-img"></span>
-									<span class="overlay-img-thumb font-icon-plus"></span>
-								</a>
-								<!-- Thumb Image and Description -->
-								<img src="img/work/thumbs/calculator.jpg" alt="A simple calculator app for iOS written in Swift. Guided by iTunes U and Stanford. If Apple isn't going to ship a calculator for the iPad, I figured I would make one myself. I mean, we should at least be able to add two numbers together without seeing ads, right?">
-							</li>
-							<!-- End Item Project -->
-
-							<!-- Item Project and Filter Name -->
-							<li class="item-thumbs span3 web">
-								<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-								<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Comic Book Viewer" href="img/work/full/dtcomics-full.jpg">
-									<span class="overlay-img"></span>
-									<span class="overlay-img-thumb font-icon-plus"></span>
-								</a>
-								<!-- Thumb Image and Description -->
-								<img src="img/work/thumbs/dtcomics.jpg" alt="A web application built using Express and Node.js that allows users to upload and share images. First experience using Jade - I can see why others preferred to use plain HTML now. (A+)">
-							</li>
-							<!-- End Item Project -->
-
-							<!-- Item Project and Filter Name -->
-							<li class="item-thumbs span3 cpp">
-								<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-								<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Puzzle Solver" href="img/work/full/puzzlesolver-full.jpg">
-									<span class="overlay-img"></span>
-									<span class="overlay-img-thumb font-icon-plus"></span>
-								</a>
-								<!-- Thumb Image and Description -->
-								<img src="img/work/thumbs/puzzlesolver.jpg" alt="A program that solve puzzles such as Sudoku,  the Wolf-Goat-Cabbage problem, and multiple slider puzzles of varying sizes. Created abstract data types including Queue{LinkedList, HeapPriority, CircularArray}, and fixed-size and dynamically resizing hash tables (with chaining) based dictionaries. Full disclosure: course slides and Google were available as resources and I took full advantage of that.">
-							</li>
-							<!-- End Item Project -->
-
-							<!-- Item Project and Filter Name -->
-							<li class="item-thumbs span3 java">
-								<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-								<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Mind the Gap" href="img/work/full/mindthegap-full.jpg">
-									<span class="overlay-img"></span>
-									<span class="overlay-img-thumb font-icon-plus"></span>
-								</a>
-								<!-- Thumb Image and Description -->
-								<img src="img/work/thumbs/mindthegap.jpg" alt="An Android application that uses Transport for London (TfL) Open Data and OSMDroid to plot the London Underground tube lines onto a map. Functionality included showing users the locations of stops and real-time arrivals information. It was all good fun. Cheers. (A+)">
-							</li>
-							<!-- End Item Project -->
-
+					<div class="span9 social">
+						<ul class="social-icons">
+							<li><a href="https://www.twitter.com/dleungtm"><i class="font-icon-social-twitter"></i></a></li>
+							<li><a href="https://www.facebook.com/dleungtm"><i class="font-icon-social-facebook"></i></a></li>
+							<li><a href="https://www.linkedin.com/in/dleungtm"><i class="font-icon-social-linkedin"></i></a></li>
+							<li><a href="mailto:dleungtm@gmail.com"><i class="font-icon-social-email"></i></a></li>
 						</ul>
-					</section>
-
+					</div>
 				</div>
 			</div>
 		</div>
-		<!-- End Portfolio Projects -->
+		<!-- End Profile -->
+
 	</div>
-</div>
-<!-- End My Projects Section -->
+	<!-- End About Section -->
 
-
-<!-- Contact Section -->
-<div id="contact" class="page">
-	<div class="container">
-		<!-- Title Page -->
-		<div class="row">
-			<div class="span12">
-				<div class="title-page">
-					<h2 class="title">Get in Touch with Me!</h2>
-					<h3 class="title-description">Feel free to shoot me a message!</h3>
-				</div>
-			</div>
-		</div>
-		<!-- End Title Page -->
-
-		<!-- Contact Form -->
-		<div class="row">
-			<div class="offset2 span8">
-
-				<form id="contact-form" class="contact-form" action="#">
-					<p class="contact-name">
-						<input id="contact_name" type="text" placeholder="Full Name" value="" name="name" />
-					</p>
-					<p class="contact-email">
-						<input id="contact_email" type="text" placeholder="Email Address" value="" name="email" />
-					</p>
-					<p class="contact-message">
-						<textarea id="contact_message" placeholder="Your Message" name="message" rows="15" cols="40"></textarea>
-					</p>
-					<p class="contact-submit">
-						<a id="contact-submit" class="submit" href="#">Send Your Email</a>
-					</p>
-
-					<div id="response">
+	<!-- My Projects Section -->
+	<div id="work" class="page-alternate">
+		<div class="container">
+			<!-- Title Page -->
+			<div class="row">
+				<div class="span12">
+					<div class="title-page">
+						<h2 class="title">My Projects</h2>
+						<h3 class="title-description">Check out my projects on <a href="https://github.com/dleungtm">GitHub</a></h3>
+						<h3 class="title-description">or download my <a href="assets/resume.pdf">resume</a>.</h3>
 
 					</div>
-				</form>
-
+				</div>
 			</div>
+			<!-- End Title Page -->
+
+			<!-- Portfolio Projects -->
+			<div class="row">
+				<div class="span3">
+					<!-- Filter -->
+					<nav id="options" class="work-nav">
+						<ul id="filters" class="option-set" data-option-key="filter">
+							<li class="type-work">Type of Project</li>
+							<li><a href="#filter" data-option-value="*" class="selected">All Projects</a></li>
+							<li><a href="#filter" data-option-value=".cpp">C++</a></li>
+							<li><a href="#filter" data-option-value=".java">Java</a></li>
+							<li><a href="#filter" data-option-value=".swift">Swift</a></li>
+							<li><a href="#filter" data-option-value=".web">Web</a></li>
+						</ul>
+					</nav>
+					<!-- End Filter -->
+				</div>
+
+				<div class="span9">
+					<div class="row">
+						<section id="projects">
+							<ul id="thumbs">
+
+								<!-- Item Project and Filter Name -->
+								<li class="item-thumbs span3 web">
+									<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+									<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Personal Website" href="img/work/full/personalwebsite-full.jpg">
+										<span class="overlay-img"></span>
+										<span class="overlay-img-thumb font-icon-plus"></span>
+									</a>
+									<!-- Thumb Image and Description -->
+									<img src="img/work/thumbs/personalwebsite.jpg" alt="Well, you're looking at it. :) Quick and simple!">
+								</li>
+								<!-- End Item Project -->
+
+								<!-- Item Project and Filter Name -->
+								<li class="item-thumbs span3 swift">
+									<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+									<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Calculator for iOS" href="img/work/full/calculator-full.jpg">
+										<span class="overlay-img"></span>
+										<span class="overlay-img-thumb font-icon-plus"></span>
+									</a>
+									<!-- Thumb Image and Description -->
+									<img src="img/work/thumbs/calculator.jpg" alt="A simple calculator app for iOS written in Swift. Guided by iTunes U and Stanford. If Apple isn't going to ship a calculator for the iPad, I figured I would make one myself. I mean, we should at least be able to add two numbers together without seeing ads, right?">
+								</li>
+								<!-- End Item Project -->
+
+								<!-- Item Project and Filter Name -->
+								<li class="item-thumbs span3 web">
+									<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+									<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Comic Book Viewer" href="img/work/full/dtcomics-full.jpg">
+										<span class="overlay-img"></span>
+										<span class="overlay-img-thumb font-icon-plus"></span>
+									</a>
+									<!-- Thumb Image and Description -->
+									<img src="img/work/thumbs/dtcomics.jpg" alt="A web application built using Express and Node.js that allows users to upload and share images. First experience using Jade - I can see why others preferred to use plain HTML now. (A+)">
+								</li>
+								<!-- End Item Project -->
+
+								<!-- Item Project and Filter Name -->
+								<li class="item-thumbs span3 cpp">
+									<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+									<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Puzzle Solver" href="img/work/full/puzzlesolver-full.jpg">
+										<span class="overlay-img"></span>
+										<span class="overlay-img-thumb font-icon-plus"></span>
+									</a>
+									<!-- Thumb Image and Description -->
+									<img src="img/work/thumbs/puzzlesolver.jpg" alt="A program that solve puzzles such as Sudoku, the Wolf-Goat-Cabbage problem, and multiple slider puzzles of varying sizes. Created abstract data types including Queue{LinkedList, HeapPriority, CircularArray}, and fixed-size and dynamically resizing hash tables (with chaining) based dictionaries. Full disclosure: course slides and Google were available as resources and I took full advantage of that.">
+								</li>
+								<!-- End Item Project -->
+
+								<!-- Item Project and Filter Name -->
+								<li class="item-thumbs span3 java">
+									<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+									<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Mind the Gap" href="img/work/full/mindthegap-full.jpg">
+										<span class="overlay-img"></span>
+										<span class="overlay-img-thumb font-icon-plus"></span>
+									</a>
+									<!-- Thumb Image and Description -->
+									<img src="img/work/thumbs/mindthegap.jpg" alt="An Android application that uses Transport for London (TfL) Open Data and OSMDroid to plot the London Underground tube lines onto a map. Functionality included showing users the locations of stops and real-time arrivals information. It was all good fun. Cheers. (A+)">
+								</li>
+								<!-- End Item Project -->
+
+							</ul>
+						</section>
+
+					</div>
+				</div>
+			</div>
+			<!-- End Portfolio Projects -->
 		</div>
-		<!-- End Contact Form -->
 	</div>
-</div>
-<!-- End Contact Section -->
-
-<!-- Footer -->
-<footer>
-	<p class="credits">Copyright &copy; 2016 Desmond Leung</p>
-</footer>
-<!-- End Footer -->
-
-<!-- Back To Top -->
-<a id="back-to-top" href="#">
-	<i class="font-icon-arrow-simple-up"></i>
-</a>
-<!-- End Back to Top -->
+	<!-- End My Projects Section -->
 
 
-<!-- Js -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- jQuery Core -->
-<script src="js/bootstrap.min.js"></script> <!-- Bootstrap -->
-<script src="js/supersized.3.2.7.min.js"></script> <!-- Slider -->
-<script src="js/waypoints.js"></script> <!-- WayPoints -->
-<script src="js/waypoints-sticky.js"></script> <!-- Waypoints for Header -->
-<script src="js/jquery.isotope.js"></script> <!-- Isotope Filter -->
-<script src="js/jquery.fancybox.pack.js"></script> <!-- Fancybox -->
-<script src="js/jquery.fancybox-media.js"></script> <!-- Fancybox for Media -->
-<script src="js/jquery.tweet.js"></script> <!-- Tweet -->
-<script src="js/plugins.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
-<script src="js/main.js"></script> <!-- Default JS -->
-<!-- End Js -->
+	<!-- Contact Section -->
+	<div id="contact" class="page">
+		<div class="container">
+			<!-- Title Page -->
+			<div class="row">
+				<div class="span12">
+					<div class="title-page">
+						<h2 class="title">Get in Touch with Me!</h2>
+						<h3 class="title-description">Feel free to shoot me a message!</h3>
+					</div>
+				</div>
+			</div>
+			<!-- End Title Page -->
+
+			<!-- Contact Form -->
+			<div class="row">
+				<div class="offset2 span8">
+
+					<form id="contact-form" class="contact-form" action="#">
+						<p class="contact-name">
+							<input id="contact_name" type="text" placeholder="Full Name" value="" name="name" />
+						</p>
+						<p class="contact-email">
+							<input id="contact_email" type="text" placeholder="Email Address" value="" name="email" />
+						</p>
+						<p class="contact-message">
+							<textarea id="contact_message" placeholder="Your Message" name="message" rows="15" cols="40"></textarea>
+						</p>
+						<p class="contact-submit">
+							<a id="contact-submit" class="submit" href="#">Send Your Email</a>
+						</p>
+
+						<div id="response">
+
+						</div>
+					</form>
+
+				</div>
+			</div>
+			<!-- End Contact Form -->
+		</div>
+	</div>
+	<!-- End Contact Section -->
+
+	<!-- Footer -->
+	<footer style="position: relative;">
+		<p class="credits">Copyright &copy; 2016 Desmond Leung</p>
+	</footer>
+	<!-- End Footer -->
+
+	<!-- Back To Top -->
+	<a id="back-to-top" href="#">
+		<i class="font-icon-arrow-simple-up"></i>
+	</a>
+	<!-- End Back to Top -->
 
 </body>
 </html>
